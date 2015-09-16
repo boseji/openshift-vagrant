@@ -3,7 +3,7 @@
 This repository helps to create a **stable VM environment** using [*Virtual Box*](https://www.virtualbox.org/) and 
 [*Vagrant*](https://www.vagrantup.com/) for working with [**Redhat's OpenShift**](https://openshift.redhat.com).
 
-Additionally the internal provisioning adds packages `ruby-full`,`rubygems`, 
+Additionally the internal provisioning adds packages `ruby-full` , `rubygems` , 
 `python` and `node` to help in web-development.
 
 
@@ -13,7 +13,7 @@ Additionally the internal provisioning adds packages `ruby-full`,`rubygems`,
 One must have the following software installed:
 
 *  [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - At least Version 5.0.4 (at the time of writing this)
-*  [Vagrant](https://www.vagrantup.com/downloads.html)
+*  [Vagrant](https://www.vagrantup.com/downloads.html) - VM Tool
 
 
 ## Usage
@@ -42,7 +42,7 @@ Next Enter the Login and Password for your *OpenShift Account*
 
 Allow the program to create the keys needed and upload them by typing `yes`
 
-Thats It! you VM would be now read to work with ***OpenShift***
+***Thats It!*** you VM would be now read to work with ***OpenShift***
 
 
 ## Notes for Vagrant
@@ -51,7 +51,9 @@ Additionally if you would like to ShutDown the VM instance *which is needed alwa
 
      vagrant halt
 
-This would shutdown the VM and can be started back again in the same way by giving the `vagrant up` command.
+This would shutdown the VM and can be started back again in the 
+
+same way by giving the `vagrant up` command.
 
 
 In case things have gone wrong and you wish the start again from scratch give the following command sequence:
@@ -59,9 +61,12 @@ In case things have gone wrong and you wish the start again from scratch give th
     vagrant destroy
     rm -rf .vagrant
 
-Everything along with the VM would be deleted from the HDD and one can start a fresh by giving the `vagrant up` command. Also *not to worry about Download of VM*, the one that was done earlier is still in the **Vagrant local** area so it would be fast to make the VM again.
+Everything along with the VM would be deleted from the HDD and one can start a fresh by giving the `vagrant up` command. 
+
+
+Also **not to worry about Download of VM**, the one that was done earlier is still in the *Vagrant local* area so it would be fast to make the VM again.
 
 
 ## License
 
-Released under the [MIT License]()
+Released under the [MIT License](https://raw.githubusercontent.com/boseji/openshift-vagrant/master/LICENSE)
