@@ -70,7 +70,7 @@ Vagrant.configure(2) do |config|
   # SHELL
   config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
-     sudo apt-get install -y ruby-full rubygems git-core node python
+     sudo apt-get install -y ruby-full rubygems git-core node python npm
      ruby -e 'puts " ! Ruby Installed ! "'
      sudo gem install rhc
   SHELL

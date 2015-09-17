@@ -20,7 +20,7 @@ One must have the following software installed:
 
 Clone this repository or download+extract the Zip of this repository.
 
-In a command terminal, *(In windows use **GIT-BASH** as not all commands will work)* 
+In a command terminal, *(In windows use GIT-BASH as not all commands will work)* 
 type the following commands:
 
     vagrant up
